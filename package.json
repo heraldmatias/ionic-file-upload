@@ -11,7 +11,8 @@
     "lint": "ionic-app-scripts lint"
   },
   "dependencies": {
-    "express": "~4.4.3",
+    "connect": "~3.6.6",
+    "serve-static": "~1.13.2",
     "@angular/animations": "5.2.11",
     "@angular/common": "5.2.11",
     "@angular/compiler": "5.2.11",
