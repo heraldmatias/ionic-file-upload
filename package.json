@@ -37,7 +37,7 @@
     "sw-toolbox": "3.6.0",
     "typescript": "~2.6.2",
     "zone.js": "0.8.26",
-    "@angular/tsc-wrapped": "^4.4.6",
+    "@angular/tsc-wrapped": "^4.4.6"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.0",
