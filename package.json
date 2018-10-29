@@ -12,7 +12,6 @@
     "lint": "ionic-app-scripts lint"
   },
   "dependencies": {
-    "express": "~4.4.3",
     "@angular/animations": "5.2.11",
     "@angular/common": "5.2.11",
     "@angular/compiler": "5.2.11",
@@ -25,15 +24,19 @@
     "@ionic-native/core": "~4.15.0",
     "@ionic-native/splash-screen": "~4.15.0",
     "@ionic-native/status-bar": "~4.15.0",
+    "@ionic/app-scripts": "2.1.4",
     "@ionic/pro": "2.0.3",
     "@ionic/storage": "2.2.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.4.5",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
+    "morgan": "^1.9.1",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.26",
-    "@ionic/app-scripts": "2.1.4",
-    "typescript": "2.3.4"
+    "typescript": "2.3.4",
+    "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.0",
