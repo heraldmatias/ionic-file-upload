@@ -1,23 +1,14 @@
-var express  = require('express');
-var app      = express();
-var morgan = require('morgan');
-var bodyParser = require('body-parser');
-var cors = require('cors');
+'use strict';
 
-app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({'extended':'true'}));
-app.use(bodyParser.json());
-app.use(cors());
+const express = require('express');
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header('Access-Control-Allow-Methods', 'DELETE, PUT');
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+// Constants
+const PORT = process.env.PORT || 8080;
+const HOST = '0.0.0.0';
 
-app.use(express.static('www'));
-app.set('port', process.env.PORT || 5000);
-app.listen(app.get('port'), function () {
-  console.log('Express server listening on port ' + app.get('port'));
-});
+// App
+const app = express();
+app.use('/', express.static(__dirname));
+
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
