@@ -6,10 +6,10 @@
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",
+    "startprod": "node server",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
-    "lint": "ionic-app-scripts lint",
-    "postinstall": "ionic build"
+    "lint": "ionic-app-scripts lint"
   },
   "dependencies": {
     "express": "~4.4.3",
@@ -31,7 +31,8 @@
     "ionicons": "3.0.0",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.26"
+    "zone.js": "0.8.26",
+    "@ionic/app-scripts": "2.1.4"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.0",
