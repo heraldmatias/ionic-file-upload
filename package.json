@@ -11,6 +11,7 @@
     "lint": "ionic-app-scripts lint"
   },
   "dependencies": {
+    "express": "~4.4.3",
     "@angular/animations": "5.2.11",
     "@angular/common": "5.2.11",
     "@angular/compiler": "5.2.11",
@@ -33,7 +34,11 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.0",
+    "@ionic/lab": "1.0.11",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {}
+  }
 }

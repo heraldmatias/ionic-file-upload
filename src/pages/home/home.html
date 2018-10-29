@@ -7,8 +7,29 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <!--<ion-item>
+    <h3>Capturar imagen con apps de imagenes</h3>
+  </ion-item>
+  <ion-item>
+    <ion-input color="secondary" type="file" accept="image/*;capture=camera" [(ngModel)]="imageFileName" (change)="getImage($event)"></ion-input>
+  </ion-item>-->
+  <ion-item>
+    <h3>Capturar con la camara</h3>
+  </ion-item>
+  <ion-item>
+    <ion-input color="secondary" type="file" accept="image/*" capture="camera" id="upload" [(ngModel)]="imageFileName" (change)="getImage($event)"></ion-input>
+  </ion-item>
+  <!--<ion-item>-->
+    <!--<h3>Seleccionar imagen exsitente</h3>-->
+  <!--</ion-item>-->
+  <!--<ion-item>-->
+    <!--<ion-input type="file" accept="image/*" id="file-input" [(ngModel)]="imageFileName" (change)="getImage($event)"></ion-input>-->
+  <!--</ion-item>-->
+  <ion-item>
+    <h4>Image Preview</h4>
+    <img src="{{imageContent}}" *ngIf="imageContent" alt="Ionic File" width="500" />
+  </ion-item>
+  <ion-item>
+    <button ion-button (click)="uploadFile()">Upload</button>
+  </ion-item>
 </ion-content>
